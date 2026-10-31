@@ -1,0 +1,17 @@
+name: Build and check
+on:
+  push:
+  pull_request:
+jobs:
+  linux:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Source checks
+        run: bash scripts/check.sh
+      - name: Configure
+        run: cmake -S native_base/baseline/reproduction/native/native_source -B build -DCMAKE_BUILD_TYPE=Release -DFETCHCONTENT_FULLY_DISCONNECTED=ON -DYAML_CPP_BUILD_TESTS=OFF -DSPDLOG_BUILD_TESTS=OFF
+      - name: Build
+        run: cmake --build build --parallel 2
+      - name: Native smoke
+        run: python3 tools/smoke_native.py --binary build/ramulator2

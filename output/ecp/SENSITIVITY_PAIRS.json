@@ -1,0 +1,541 @@
+[
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "capacity384",
+    "baseline": "sens__capacity384__serial__real_m0_c0_q1024",
+    "candidate": "sens__capacity384__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "capacity512",
+    "baseline": "sens__capacity512__serial__real_m0_c0_q1024",
+    "candidate": "sens__capacity512__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "scratch16",
+    "baseline": "sens__scratch16__serial__real_m0_c0_q1024",
+    "candidate": "sens__scratch16__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "scratch64",
+    "baseline": "sens__scratch64__serial__real_m0_c0_q1024",
+    "candidate": "sens__scratch64__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "credits16",
+    "baseline": "sens__credits16__serial__real_m0_c0_q1024",
+    "candidate": "sens__credits16__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "credits32",
+    "baseline": "sens__credits32__serial__real_m0_c0_q1024",
+    "candidate": "sens__credits32__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "mac7",
+    "baseline": "sens__mac7__serial__real_m0_c0_q1024",
+    "candidate": "sens__mac7__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "mac8",
+    "baseline": "sens__mac8__serial__real_m0_c0_q1024",
+    "candidate": "sens__mac8__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "maxgroup2",
+    "baseline": "sens__maxgroup2__serial__real_m0_c0_q1024",
+    "candidate": "sens__maxgroup2__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "startup8",
+    "baseline": "base__real_m0_c0_q1024",
+    "candidate": "sens__startup8__full__real_m0_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m0_c0_q1024",
+    "point": "selector_plus1",
+    "baseline": "base__real_m0_c0_q1024",
+    "candidate": "sens__mac7__full__real_m0_c0_q1024",
+    "scope": "candidate MAC+1 penalty;reference remains nominalMAC6"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "capacity384",
+    "baseline": "sens__capacity384__serial__real_m1_c0_q1024",
+    "candidate": "sens__capacity384__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "capacity512",
+    "baseline": "sens__capacity512__serial__real_m1_c0_q1024",
+    "candidate": "sens__capacity512__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "scratch16",
+    "baseline": "sens__scratch16__serial__real_m1_c0_q1024",
+    "candidate": "sens__scratch16__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "scratch64",
+    "baseline": "sens__scratch64__serial__real_m1_c0_q1024",
+    "candidate": "sens__scratch64__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "credits16",
+    "baseline": "sens__credits16__serial__real_m1_c0_q1024",
+    "candidate": "sens__credits16__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "credits32",
+    "baseline": "sens__credits32__serial__real_m1_c0_q1024",
+    "candidate": "sens__credits32__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "mac7",
+    "baseline": "sens__mac7__serial__real_m1_c0_q1024",
+    "candidate": "sens__mac7__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "mac8",
+    "baseline": "sens__mac8__serial__real_m1_c0_q1024",
+    "candidate": "sens__mac8__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "maxgroup2",
+    "baseline": "sens__maxgroup2__serial__real_m1_c0_q1024",
+    "candidate": "sens__maxgroup2__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "startup8",
+    "baseline": "base__real_m1_c0_q1024",
+    "candidate": "sens__startup8__full__real_m1_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m1_c0_q1024",
+    "point": "selector_plus1",
+    "baseline": "base__real_m1_c0_q1024",
+    "candidate": "sens__mac7__full__real_m1_c0_q1024",
+    "scope": "candidate MAC+1 penalty;reference remains nominalMAC6"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "capacity384",
+    "baseline": "sens__capacity384__serial__real_m2_c0_q1024",
+    "candidate": "sens__capacity384__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "capacity512",
+    "baseline": "sens__capacity512__serial__real_m2_c0_q1024",
+    "candidate": "sens__capacity512__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "scratch16",
+    "baseline": "sens__scratch16__serial__real_m2_c0_q1024",
+    "candidate": "sens__scratch16__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "scratch64",
+    "baseline": "sens__scratch64__serial__real_m2_c0_q1024",
+    "candidate": "sens__scratch64__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "credits16",
+    "baseline": "sens__credits16__serial__real_m2_c0_q1024",
+    "candidate": "sens__credits16__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "credits32",
+    "baseline": "sens__credits32__serial__real_m2_c0_q1024",
+    "candidate": "sens__credits32__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "mac7",
+    "baseline": "sens__mac7__serial__real_m2_c0_q1024",
+    "candidate": "sens__mac7__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "mac8",
+    "baseline": "sens__mac8__serial__real_m2_c0_q1024",
+    "candidate": "sens__mac8__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "maxgroup2",
+    "baseline": "sens__maxgroup2__serial__real_m2_c0_q1024",
+    "candidate": "sens__maxgroup2__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "startup8",
+    "baseline": "base__real_m2_c0_q1024",
+    "candidate": "sens__startup8__full__real_m2_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m2_c0_q1024",
+    "point": "selector_plus1",
+    "baseline": "base__real_m2_c0_q1024",
+    "candidate": "sens__mac7__full__real_m2_c0_q1024",
+    "scope": "candidate MAC+1 penalty;reference remains nominalMAC6"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "capacity384",
+    "baseline": "sens__capacity384__serial__real_m3_c0_q1024",
+    "candidate": "sens__capacity384__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "capacity512",
+    "baseline": "sens__capacity512__serial__real_m3_c0_q1024",
+    "candidate": "sens__capacity512__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "scratch16",
+    "baseline": "sens__scratch16__serial__real_m3_c0_q1024",
+    "candidate": "sens__scratch16__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "scratch64",
+    "baseline": "sens__scratch64__serial__real_m3_c0_q1024",
+    "candidate": "sens__scratch64__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "credits16",
+    "baseline": "sens__credits16__serial__real_m3_c0_q1024",
+    "candidate": "sens__credits16__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "credits32",
+    "baseline": "sens__credits32__serial__real_m3_c0_q1024",
+    "candidate": "sens__credits32__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "mac7",
+    "baseline": "sens__mac7__serial__real_m3_c0_q1024",
+    "candidate": "sens__mac7__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "mac8",
+    "baseline": "sens__mac8__serial__real_m3_c0_q1024",
+    "candidate": "sens__mac8__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "maxgroup2",
+    "baseline": "sens__maxgroup2__serial__real_m3_c0_q1024",
+    "candidate": "sens__maxgroup2__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "startup8",
+    "baseline": "base__real_m3_c0_q1024",
+    "candidate": "sens__startup8__full__real_m3_c0_q1024",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "real_m3_c0_q1024",
+    "point": "selector_plus1",
+    "baseline": "base__real_m3_c0_q1024",
+    "candidate": "sens__mac7__full__real_m3_c0_q1024",
+    "scope": "candidate MAC+1 penalty;reference remains nominalMAC6"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "capacity384",
+    "baseline": "sens__capacity384__serial__new_m1_c4_q2048",
+    "candidate": "sens__capacity384__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "capacity512",
+    "baseline": "sens__capacity512__serial__new_m1_c4_q2048",
+    "candidate": "sens__capacity512__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "scratch16",
+    "baseline": "sens__scratch16__serial__new_m1_c4_q2048",
+    "candidate": "sens__scratch16__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "scratch64",
+    "baseline": "sens__scratch64__serial__new_m1_c4_q2048",
+    "candidate": "sens__scratch64__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "credits16",
+    "baseline": "sens__credits16__serial__new_m1_c4_q2048",
+    "candidate": "sens__credits16__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "credits32",
+    "baseline": "sens__credits32__serial__new_m1_c4_q2048",
+    "candidate": "sens__credits32__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "mac7",
+    "baseline": "sens__mac7__serial__new_m1_c4_q2048",
+    "candidate": "sens__mac7__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "mac8",
+    "baseline": "sens__mac8__serial__new_m1_c4_q2048",
+    "candidate": "sens__mac8__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "maxgroup2",
+    "baseline": "sens__maxgroup2__serial__new_m1_c4_q2048",
+    "candidate": "sens__maxgroup2__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "startup8",
+    "baseline": "base__new_m1_c4_q2048",
+    "candidate": "sens__startup8__full__new_m1_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m1_c4_q2048",
+    "point": "selector_plus1",
+    "baseline": "base__new_m1_c4_q2048",
+    "candidate": "sens__mac7__full__new_m1_c4_q2048",
+    "scope": "candidate MAC+1 penalty;reference remains nominalMAC6"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "capacity384",
+    "baseline": "sens__capacity384__serial__new_m2_c4_q2048",
+    "candidate": "sens__capacity384__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "capacity512",
+    "baseline": "sens__capacity512__serial__new_m2_c4_q2048",
+    "candidate": "sens__capacity512__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "scratch16",
+    "baseline": "sens__scratch16__serial__new_m2_c4_q2048",
+    "candidate": "sens__scratch16__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "scratch64",
+    "baseline": "sens__scratch64__serial__new_m2_c4_q2048",
+    "candidate": "sens__scratch64__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "credits16",
+    "baseline": "sens__credits16__serial__new_m2_c4_q2048",
+    "candidate": "sens__credits16__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "credits32",
+    "baseline": "sens__credits32__serial__new_m2_c4_q2048",
+    "candidate": "sens__credits32__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "mac7",
+    "baseline": "sens__mac7__serial__new_m2_c4_q2048",
+    "candidate": "sens__mac7__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "mac8",
+    "baseline": "sens__mac8__serial__new_m2_c4_q2048",
+    "candidate": "sens__mac8__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "maxgroup2",
+    "baseline": "sens__maxgroup2__serial__new_m2_c4_q2048",
+    "candidate": "sens__maxgroup2__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "startup8",
+    "baseline": "base__new_m2_c4_q2048",
+    "candidate": "sens__startup8__full__new_m2_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m2_c4_q2048",
+    "point": "selector_plus1",
+    "baseline": "base__new_m2_c4_q2048",
+    "candidate": "sens__mac7__full__new_m2_c4_q2048",
+    "scope": "candidate MAC+1 penalty;reference remains nominalMAC6"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "capacity384",
+    "baseline": "sens__capacity384__serial__new_m3_c4_q2048",
+    "candidate": "sens__capacity384__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "capacity512",
+    "baseline": "sens__capacity512__serial__new_m3_c4_q2048",
+    "candidate": "sens__capacity512__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "scratch16",
+    "baseline": "sens__scratch16__serial__new_m3_c4_q2048",
+    "candidate": "sens__scratch16__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "scratch64",
+    "baseline": "sens__scratch64__serial__new_m3_c4_q2048",
+    "candidate": "sens__scratch64__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "credits16",
+    "baseline": "sens__credits16__serial__new_m3_c4_q2048",
+    "candidate": "sens__credits16__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "credits32",
+    "baseline": "sens__credits32__serial__new_m3_c4_q2048",
+    "candidate": "sens__credits32__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "mac7",
+    "baseline": "sens__mac7__serial__new_m3_c4_q2048",
+    "candidate": "sens__mac7__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "mac8",
+    "baseline": "sens__mac8__serial__new_m3_c4_q2048",
+    "candidate": "sens__mac8__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "maxgroup2",
+    "baseline": "sens__maxgroup2__serial__new_m3_c4_q2048",
+    "candidate": "sens__maxgroup2__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "startup8",
+    "baseline": "base__new_m3_c4_q2048",
+    "candidate": "sens__startup8__full__new_m3_c4_q2048",
+    "scope": "both arms share changed resource;startup only affects the pipeline"
+  },
+  {
+    "fixture": "new_m3_c4_q2048",
+    "point": "selector_plus1",
+    "baseline": "base__new_m3_c4_q2048",
+    "candidate": "sens__mac7__full__new_m3_c4_q2048",
+    "scope": "candidate MAC+1 penalty;reference remains nominalMAC6"
+  }
+]

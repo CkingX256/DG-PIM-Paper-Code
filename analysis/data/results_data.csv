@@ -1,0 +1,46 @@
+figure,panel,source_or_scope,metric,value,baseline
+3,a,real1280,serial:c1,1.0,same-input Dense serial
+3,a,real1280,pipeline:c1,1.0593766469629076,same-input Dense serial
+3,a,real1280,priority:c1,1.052727309608974,same-input Dense serial
+3,a,real1280,priority_shadow_cache:c1,1.052727309608974,same-input Dense serial
+3,a,real1280,serial_bank_cache:c1,0.9399225933637969,same-input Dense serial
+3,a,real1280,eager_full:c1,1.0493152128559726,same-input Dense serial
+3,a,real1280,full_no_priority:c1,1.0736879523329472,same-input Dense serial
+3,a,real1280,full:c1,1.0661536565201801,same-input Dense serial
+3,a,real8k,serial:c1,1.0,same-input Dense serial
+3,a,real8k,pipeline:c1,1.023212471536171,same-input Dense serial
+3,a,real8k,priority:c1,1.021184055493205,same-input Dense serial
+3,a,real8k,priority_shadow_cache:c1,1.014661870278664,same-input Dense serial
+3,a,real8k,serial_bank_cache:c1,0.9699928431826749,same-input Dense serial
+3,a,real8k,eager_full:c1,1.0106156230969385,same-input Dense serial
+3,a,real8k,full_no_priority:c1,1.0107607629258062,same-input Dense serial
+3,a,real8k,full:c1,1.0107310320962022,same-input Dense serial
+3,b,real1280,full:c1,1.0661536565201801,same-input same-channel Dense serial
+3,b,real1280,full:c2,1.0394169695802908,same-input same-channel Dense serial
+3,b,real1280,full:c4,1.0854485956293118,same-input same-channel Dense serial
+3,b,wiki_val_q2k_a,full:c1,1.0771204930383895,same-input same-channel Dense serial
+3,b,wiki_val_q2k_a,full:c2,1.0710336439245365,same-input same-channel Dense serial
+3,b,wiki_val_q2k_a,full:c4,1.0732788599187855,same-input same-channel Dense serial
+3,b,wiki_val_q2k_b,full:c1,1.0800227827147424,same-input same-channel Dense serial
+3,b,wiki_val_q2k_b,full:c2,1.071201945587014,same-input same-channel Dense serial
+3,b,wiki_val_q2k_b,full:c4,1.0732490717146503,same-input same-channel Dense serial
+4,a,All Q4 c=1,R,1.1666,Earlier288/96paircohorts;B_c
+4,a,All Q4 c=1,E,1.1183,Earlier288/96paircohorts;B_c
+4,a,All Q4 c=1,q0,1.2212,Earlier288/96paircohorts;B_c
+4,a,4 channels c=4,R,1.1835,Earlier288/96paircohorts;B_c
+4,a,4 channels c=4,E,1.1592,Earlier288/96paircohorts;B_c
+4,a,4 channels c=4,q0,1.2358,Earlier288/96paircohorts;B_c
+4,a,D=32 N=512,R,1.2523,Earlier288/96paircohorts;B_c
+4,a,D=32 N=512,E,1.181,Earlier288/96paircohorts;B_c
+4,a,D=32 N=512,q0,1.3406,Earlier288/96paircohorts;B_c
+4,a,D=128 N=512,R,1.3082,Earlier288/96paircohorts;B_c
+4,a,D=128 N=512,E,1.1683,Earlier288/96paircohorts;B_c
+4,a,D=128 N=512,q0,1.4227,Earlier288/96paircohorts;B_c
+4,b,1280/Q256,ECP D,1.0662,Earliernamedcohortmatchingbaseline
+4,b,1280/Q256,ECP L,1.0805,Earliernamedcohortmatchingbaseline
+4,b,Q1024,ECP E,1.0568,Earliernamedcohortmatchingbaseline
+4,b,Q1024,Combined C,1.0852,Earliernamedcohortmatchingbaseline
+4,b,Q2048,ECP E,1.0737,Earliernamedcohortmatchingbaseline
+4,b,Q2048,Combined C,1.0895,Earliernamedcohortmatchingbaseline
+4,b,8K/Q4,ECP D,1.0107,Earliernamedcohortmatchingbaseline
+4,b,8K/Q4,ECP L,1.0054,Earliernamedcohortmatchingbaseline

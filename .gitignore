@@ -1,0 +1,37 @@
+# Generated builds and caches
+/build/
+/cmake-build-*/
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.exe
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+.env
+.env.*
+.DS_Store
+.idea/
+.vscode/
+# Native traces, captured model data and local outputs
+/output/ecp/native/
+/output/ecp/results/
+/output/ecp/oracles/
+/output/ecp/original_captures/
+/output/ecp/captures_new/
+/output/ecp/model_cache/
+/output/ecp/host_interruptions/
+/output/ecp/host_*LOCK*
+*.log
+*.tar.gz
+*.npz
+*.safetensors
+*.pt
+*.pth

@@ -1,0 +1,52 @@
+Frontend:
+  impl: NumericHarness
+  clock_ratio: 1
+MemorySystem:
+  impl: NumericPIMDRAM8
+  clock_ratio: 1
+  DRAM:
+    impl: HBM3-PIM
+    org:
+      preset: HBM3_8Gb_2R
+      channel: 1
+    timing:
+      preset: HBM3_5.2Gbps
+  Controller:
+    impl: HBM3-PIM
+    Scheduler:
+      impl: PIM
+    RefreshManager:
+      impl: AllBankHBM3
+    plugins:
+    - ControllerPlugin:
+        impl: HBM3TraceRecorder
+        flush_on_trace: true
+    numeric_mac_latency: 6
+    numeric_move_latency: 4
+  AddrMapper:
+    impl: HBM3-PIM
+  observer_latency: 4
+  observer_interval: 1
+  fused_tail: 4
+  budget_setup: 24
+  zero_tail: 1
+  scratch_bytes_per_cycle: 32
+  legacy_epu_timing: false
+  resident_certificate: true
+  bank_envelope: true
+  quota_cycles: 3
+  lean_scalar: true
+  route_bytes_per_cycle: 256
+  route_latency: 4
+  route_credits: 4
+  pair_dispatch_cycles: 4
+  token_use_route: false
+  mode: dense
+  epsilon: 0.1
+  fault: none
+  sort_width: 1
+  norm_lanes: 4
+  mac_latency: 6
+  move_latency: 4
+  watchdog: 20000000
+  cache_initialization: existing

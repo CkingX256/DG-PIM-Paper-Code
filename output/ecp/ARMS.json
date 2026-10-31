@@ -1,0 +1,48 @@
+{
+  "serial": {},
+  "pipeline": {
+    "qk_reuse_pipeline": true
+  },
+  "priority": {
+    "qk_reuse_pipeline": true,
+    "qk_priority_first": true
+  },
+  "priority_shadow_cache": {
+    "qk_reuse_pipeline": true,
+    "qk_priority_first": true,
+    "qk_cache_reserve_only": true
+  },
+  "cache_all_no_priority": {
+    "qk_reuse_pipeline": true,
+    "qk_exact_exp_cache": true,
+    "qk_exp_policy": "all",
+    "inplace_exp": false
+  },
+  "cache_all_priority": {
+    "qk_reuse_pipeline": true,
+    "qk_priority_first": true,
+    "qk_exact_exp_cache": true,
+    "qk_exp_policy": "all",
+    "inplace_exp": false
+  },
+  "serial_bank_cache": {
+    "qk_reuse_pipeline": true,
+    "qk_priority_first": true,
+    "qk_exact_exp_cache": true,
+    "qk_pipeline_depth": 1,
+    "inplace_exp": false
+  },
+  "eager_full": {
+    "qk_reuse_pipeline": true,
+    "qk_priority_first": true,
+    "qk_exact_exp_cache": true,
+    "qk_readout_first": false,
+    "inplace_exp": false
+  },
+  "full": {
+    "qk_reuse_pipeline": true,
+    "qk_priority_first": true,
+    "qk_exact_exp_cache": true,
+    "inplace_exp": false
+  }
+}

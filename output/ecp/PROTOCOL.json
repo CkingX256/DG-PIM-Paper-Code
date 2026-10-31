@@ -1,0 +1,125 @@
+{
+  "status": "FROZEN_BEFORE_NEW_CAPTURES_OR_TIMINGS",
+  "date": "",
+  "source": {
+    "variant/consumer_qk_pipeline.inc": "c28c22359f9f992183de18f95d0904c4e0c0b7d1cbcdf48d7211e0a076b3e436",
+    "variant/numeric_pair.cpp": "d0150a1e51f5f14bbaef02fec16d9a6a060638314226cd0ef7cc9f64385dda53",
+    "variant/multichannel.inc": "5a7e290b7cb5781d4bd4f0385549315a283774bce815895b82c7ad89aee9f18b"
+  },
+  "heldout": [
+    {
+      "model": 1,
+      "context": 4,
+      "character_offset": 400000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 1,
+      "context": 5,
+      "character_offset": 500000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 1,
+      "context": 6,
+      "character_offset": 600000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 1,
+      "context": 7,
+      "character_offset": 700000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 2,
+      "context": 4,
+      "character_offset": 400000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 2,
+      "context": 5,
+      "character_offset": 500000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 2,
+      "context": 6,
+      "character_offset": 600000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 2,
+      "context": 7,
+      "character_offset": 700000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 3,
+      "context": 4,
+      "character_offset": 400000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 3,
+      "context": 5,
+      "character_offset": 500000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 3,
+      "context": 6,
+      "character_offset": 600000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    },
+    {
+      "model": 3,
+      "context": 7,
+      "character_offset": 700000,
+      "characters": 65000,
+      "L0": 257,
+      "Q": 2048
+    }
+  ],
+  "policy": "Frozen previous readout-first depth2,priority,predictive exact cache;no tuning or exclusion based on heldout outputs/timing. Q4 remains reference consumer.",
+  "ablation_arms": [
+    "serial",
+    "pipeline",
+    "priority",
+    "priority_shadow_cache",
+    "cache_all_no_priority",
+    "cache_all_priority",
+    "serial_bank_cache",
+    "eager_full",
+    "full"
+  ],
+  "ablation_contexts": "All10original real contexts,not new independent samples.",
+  "sensitivity": "Matched serial/full resource points;capacity384/512KiB,consumer scratch16/64Bcycle,credits16/32,commonMAC7/8,maxgroup2,startup8. Four original c0Q1024 owner profiles plus3models atnewcontext4Q2048. Selector-only penalty is separately labeled.",
+  "quality": "All six arrays against a fresh matched serial result;independent C++ encodedDense oracle and capturedFP32 exact integer relative1% gate. Count all registered new heads and every failure. No numeric oracle fallback.",
+  "tail": "Full episodes,checkpoints,last64/128/256/512 windows,perqueryretirementp50/p95/p99/p99.9 andpairedW/T/L;bootstrap by text block,notquery.",
+  "area_power": "Technology-free symbolic component ledger and normalizedarea/power-overhead break-even surfaces;no synthesizedmm2orW claim.",
+  "external": "FA3 requires HopperGPU/CUDA,currently absent. Supply pinned official runner withsameinputs/causaldecode boundary and explicit blocked status. SoftmaxPIM trainedConSmax anddifferentkernel/dies are not an exact same-image baseline;no importedpublishedratio."
+}

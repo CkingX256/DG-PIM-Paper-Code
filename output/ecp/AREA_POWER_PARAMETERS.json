@@ -1,0 +1,35 @@
+{
+ "status":"TECHNOLOGY_FREE_PARAMETERIZATION; NO_SYNTHESIZED_AREA_OR_MEASURED_POWER",
+ "boundary":"same single KV owner, same total physical capacity and reference hardware boundary",
+ "measured_inputs":["paired native elapsed-cycle ratio S","physical command counts","exclusive phase durations","logical scratch traffic and exponent/replay counts","charged peak allocation and retained set"],
+ "unknown_physical_parameters":{
+  "A_base":"reference owner area in a selected process; positive, not supplied",
+  "delta_A_macro":"area change from reorganization/access of existing accumulator macros; capacity equality does not prove zero macro overhead",
+  "w_select_mac":"number of routed accumulator datapath bits; layout-dependent, not inferred from 8 KiB capacity",
+  "w_select_read":"number of routed readout datapath bits; layout-dependent",
+  "a_mux_bit":"area per selected mux bit in the selected library",
+  "delta_A_control":"selector/controller implementation area after state aliasing, including command-selection encoding/decoding and any request-control state",
+  "delta_A_route":"routing/buffering/port-access area determined by physical design",
+  "P_base":"total reference average owner power in watts, not supplied",
+  "delta_P_average":"total candidate average-power change, including all cache/spill/control activity and leakage; not just power of added logic",
+  "calibration":"disjoint command/scratch/EPU energy weights or device-level average-power measurement; no coefficient values assumed"
+ },
+ "area_equation":"delta_A = delta_A_macro + w_select_mac*a_mux_bit + w_select_read*a_mux_bit + delta_A_control + delta_A_route; any separately added storage must be added explicitly",
+ "normalized_parameters":{"a":"delta_A/A_base","p":"delta_P_average/P_base","S":"T_baseline/T_candidate at matched native boundaries"},
+ "normalized_metrics":{"area_delay":"(1+a)/S","energy":"(1+p)/S","energy_delay":"(1+p)/S^2","area_energy_delay":"(1+a)*(1+p)/S^2"},
+ "strict_break_even":{"area_delay":"a<S-1","energy":"p<S-1","energy_delay":"p<S^2-1","area_energy_delay":"(1+a)*(1+p)<S^2"},
+ "statistics":"Uniform overhead across a cohort permits the GM S budget. An all-context improvement uses min(S); neither criterion guarantees every query. Negative budgets mean no positive overhead can satisfy strict improvement.",
+ "capacity_accounting":{
+  "total_bytes":262144,
+  "accumulator_payload":"existing 8192 B budget organized as two selectable 4096 B arrays; modeled routing extension, not stock hardware",
+  "transient_descriptor":"64 B alias of the released producer window; no producer/consumer overlap",
+  "predictor":"64 B persistent charge before retention; seven argmax and seven length uint32 entries (56 B), valid byte and padding (8 B)",
+  "exponent_cache":"4N B, plus 4*ceil(N/16) B group sums and ceil(ceil(N/16)/8) B validity; charged before selecting S",
+  "shadow_control":"same charged unused cache bytes and retained set, without functional exponent reuse",
+  "capacity_sensitivity":"384/512 KiB applied to both arms. It is additional hardware capacity, never an area-neutral claim."
+ },
+ "descriptor_layout_bytes":{"two_slots_of_five_uint32_fields":40,"next_sequence":4,"retired_sequence":4,"max_slot":4,"priority_batch":4,"old_max_bits":4,"four_flag_or_reserved_bytes":4},
+ "implementation_scope":"Native fixture guard limits H<=7, D<=128, Q<=2048 and N<=16384. Host trace vectors/counters are validation instrumentation, not free simultaneous device payload.",
+ "timing_caveat":"MAC7/8 sensitivity changes callback completion plus matching controller service, retaining native column rules. Candidate-only MAC+1 is a separate routing penalty. Neither is a synthesized clock-frequency estimate. Bank selection is a modeled per-command extension with no added column commands; its physical encoding/control interface must be implemented. The trace auditor does not prove stock-device opcode availability or cover an implementation that needs extra commands.",
+ "activity_caveat":"activity_delta.csv is an auditable feature basis, not joules. Calibrate non-overlapping energy terms before forming a power model; do not charge complete MAC-command energy and the same MAC operations twice."
+}

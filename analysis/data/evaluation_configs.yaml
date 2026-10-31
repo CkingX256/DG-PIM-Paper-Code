@@ -1,0 +1,21 @@
+model_family: "HuggingFaceTB/SmolLM2-135M"
+model_revision: "93efa2f097d58c2a74874c7e644dbc9b0cee75a2"
+corpus: "Salesforce/wikitext wikitext-2-raw-v1 (validation split)"
+hardware_budget:
+  scratchpad_bytes: 262144
+  accumulator_banks: "2 x 4096 B"
+  epu_lanes: 16
+  c128_register_bytes: 512
+  request_credits: 64
+quality_gates:
+  dense_fp32_relative_l2_max: 0.01
+  lazy_encoded_dense_abs_l2_max: 0.10
+  six_array_bitwise_equivalence: true
+dispatch_rule:
+  enable_exponent_cache_if: "Q >= 16 and N <= 4096"
+  fallback_mode: "readout_first_overlap_only"
+dataset_counts:
+  short_burst_pairs: 288
+  multichannel_runs: 1728
+  native_configs: 52
+  held_out_positions: 12300
